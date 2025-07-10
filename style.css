@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+   font-family: "Poppins", sans-serif;
+}
+.main-box{
+    background: url(./pngtree-freelancer-s-workstation-a-3d-illustration-featuring-a-camera-laptop-and-image_3681819.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+.btn-one:hover{
+    color:grey;
+    opacity: 1;
+}
+.btn-one{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    line-height:60px;
+    cursor: pointer;
+}
+.sidebar-menu{
+    position: fixed;
+    left: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    transition: all 0.5s ease-in-out;
+}
+.sidebar-menu .logo{
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0 3px 5px rgba(255, 255, 255, 0.5);
+    height: 60px;
+}
+.sidebar-menu .logo a{
+    position: absolute;
+    left: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+}
+.sidebar-menu .btn-two i{
+    color: grey;
+    font-size: 30px;
+    line-height: 60px;
+    position: absolute;
+    left: 270px;
+    opacity: 1;
+    cursor: pointer;
+}
+.sidebar-menu .menu{
+    position: absolute;
+    top: 80px;
+    width: 100%;
+}
+.sidebar-menu .menu li{
+    /* margin-top: 6px; */
+    padding: 14px 10px;
+}
+.sidebar-menu .menu i,a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px; 
+    cursor: pointer;  
+}
+.sidebar-menu .menu i{
+    padding-right: 7px;
+}
+.sidebar-menu .social-media{
+    /* color: white; */
+    position: absolute;
+    /* opacity: 0.5; */
+    left: 30%;
+    bottom: 20px;
+}
+.sidebar-menu .social-media i{
+    color: white;
+    opacity: 0.5px;
+    padding: 0 5px;
+}
+#check{
+    display: none;
+}
+.sidebar-menu .menu li:hover{
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+.btn-one i:hover{
+    font-size: auto;
+}
+.btn-two i:hover{
+    font-size: 33px;
+    opacity: 1;
+    color:black;
+}
+.sidebar-menu .social-media i:hover{
+    color:black;
+    opacity: 1px;
+    transform: scale(1.3);
+}
+#check:checked ~ .sidebar-menu{
+    left: 0;
+}
+#check:checked ~ .btn-one i{
+    /* left: 300px; */
+    opacity: 0;
+}
+.sidebar-menu .menu a:hover{
+    color:black;
+    opacity: 1px;
+    cursor: pointer;
+}
